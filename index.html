@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peti Me Bhook, Browser Me Cook!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🍽️ Peti Me Bhook, Browser Me Cook!</h1>
+
+  <div class="recipe-container">
+
+    <div class="card" onclick="openModal(0)">
+      <img src="https://figandoliveplatter.com/wp-content/uploads/2022/09/IMG_5626.jpg" alt="Pasta">
+      <h2>Spicy Garlic Pasta</h2>
+    </div>
+
+    <div class="card" onclick="openModal(1)">
+      <img src="https://leitesculinaria.com/wp-content/uploads/2020/02/classic-cheeseburger.jpg" alt="Burger">
+      <h2>Classic Cheeseburger</h2>
+    </div>
+
+    <div class="card" onclick="openModal(2)">
+      <img src="https://i0.wp.com/cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg?resize=1024%2C585&ssl=1" alt="Pizza">
+      <h2>Margherita Pizza</h2>
+    </div>
+
+    <div class="card" onclick="openModal(3)">
+      <img src="https://farm2.staticflickr.com/1509/24338314826_51af9be401_c.jpg" alt="Salad">
+      <h2>Green Power Salad</h2>
+    </div>
+
+    <div class="card" onclick="openModal(4)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSWfzyTVlldf2cJpEurNnk32MoCw3ELpA0FQ&s" alt="Soup">
+      <h2>Creamy Tomato Soup</h2>
+    </div>
+
+    <div class="card" onclick="openModal(5)">
+      <img src="https://www.eatingwell.com/thmb/KMNVp4y5oiqlCzOTO_HqPbmef_k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/281053-spicy-salmon-sushi-roll-ups-beauty-da9583b56fe0473597a9b8f92e87901b.jpg" alt="Sushi">
+      <h2>Basic Sushi Roll</h2>
+    </div>
+
+    <div class="card" onclick="openModal(6)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMANcVdM5_feTcrXg9CV5P6lMSXxA4j4AgA&s" alt="Fries">
+      <h2>Loaded Masala Fries</h2>
+    </div>
+
+    <div class="card" onclick="openModal(7)">
+      <img src="https://images.immediate.co.uk/production/volatile/sites/30/2024/06/FluffyJapanesePancakes-e6d7773.jpg?quality=90&resize=556,505" alt="Pancake">
+      <h2>Fluffy Pancakes</h2>
+    </div>
+
+  </div>
+
+  <div class="modal" id="recipeModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="recipeTitle"></h2>
+      <ul id="ingredientsList"></ul>
+      <a id="recipeLink" href="#" target="_blank">🍴 View Full Recipe</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
